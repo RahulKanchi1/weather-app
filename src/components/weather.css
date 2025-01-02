@@ -1,0 +1,90 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.weather-container {
+  margin-top: 10%;
+  font-size: 1rem;
+  border: 2px solid black;
+  padding: 1rem;
+  width: 60%;
+}
+
+.in {
+  padding: 10px;
+  box-sizing: content-box;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 80%;
+}
+
+.but {
+  color: rgb(252, 248, 248);
+  background-color: rgb(8, 8, 8);
+  border-radius: 10%;
+  width: 30%;
+  height: 5vh;
+  margin: 0.5rem;
+}
+
+.maindata {
+  text-align: center;
+}
+
+.sidedata {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+img {
+  height: auto;
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .weather-container {
+    width: 80%;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .but {
+    width: 40%;
+  }
+
+  .sidedata {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .weather-container {
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .but {
+    width: 40%;
+    font-size: 1rem;
+  }
+
+  .maindata h1 {
+    font-size: 1.5rem;
+  }
+}
